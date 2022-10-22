@@ -1,0 +1,3996 @@
+<?xml version="1.0" ?>
+<rpc-reply xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:a4e698b6-3681-40b3-a12f-64eab7b5acc4">
+	
+ 
+	<data>
+		
+  
+		<xr-xml xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-man-xml-ttyagent-cfg">
+			
+   
+			<agent>
+				
+    
+				<tty>
+					
+     
+					<enable/>
+					
+     
+					<iteration-size>0</iteration-size>
+					
+    
+				</tty>
+				
+   
+			</agent>
+			
+  
+		</xr-xml>
+		
+  
+		<netconf xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-man-xml-ttyagent-cfg">
+			
+   
+			<agent>
+				
+    
+				<tty>
+					
+     
+					<enable/>
+					
+    
+				</tty>
+				
+   
+			</agent>
+			
+  
+		</netconf>
+		
+  
+		<call-home xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-call-home-cfg">
+			
+   
+			<active/>
+			
+   
+			<contact-smart-licensing>true</contact-smart-licensing>
+			
+   
+			<profiles>
+				
+    
+				<profile>
+					
+     
+					<profile-name>CiscoTAC-1</profile-name>
+					
+     
+					<active/>
+					
+     
+					<methods>
+						
+      
+						<method>
+							
+       
+							<method>email</method>
+							
+       
+							<enable>false</enable>
+							
+      
+						</method>
+						
+      
+						<method>
+							
+       
+							<method>http</method>
+							
+       
+							<enable>true</enable>
+							
+      
+						</method>
+						
+     
+					</methods>
+					
+    
+				</profile>
+				
+   
+			</profiles>
+			
+  
+		</call-home>
+		
+  
+		<vty xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-tty-vty-cfg">
+			
+   
+			<vty-pools>
+				
+    
+				<vty-pool>
+					
+     
+					<pool-name>default</pool-name>
+					
+     
+					<first-vty>0</first-vty>
+					
+     
+					<last-vty>20</last-vty>
+					
+     
+					<line-template>default</line-template>
+					
+    
+				</vty-pool>
+				
+   
+			</vty-pools>
+			
+  
+		</vty>
+		
+  
+		<tty xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-tty-server-cfg">
+			
+   
+			<tty-lines>
+				
+    
+				<tty-line>
+					
+     
+					<name>default</name>
+					
+     
+					<connection xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-tty-management-cfg">
+						
+      
+						<transport-input>
+							
+       
+							<select>all</select>
+							
+      
+						</transport-input>
+						
+     
+					</connection>
+					
+    
+				</tty-line>
+				
+   
+			</tty-lines>
+			
+  
+		</tty>
+		
+  
+		<lldp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ethernet-lldp-cfg">
+			
+   
+			<enable>true</enable>
+			
+  
+		</lldp>
+		
+  
+		<bgp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-bgp-cfg">
+			
+   
+			<instance>
+				
+    
+				<instance-name>default</instance-name>
+				
+    
+				<instance-as>
+					
+     
+					<as>0</as>
+					
+     
+					<four-byte-as>
+						
+      
+						<as>65001</as>
+						
+      
+						<bgp-running/>
+						
+      
+						<default-vrf>
+							
+       
+							<global>
+								
+        
+								<router-id>1.1.1.1</router-id>
+								
+        
+								<global-afs>
+									
+         
+									<global-af>
+										
+          
+										<af-name>ipv4-unicast</af-name>
+										
+          
+										<enable/>
+										
+         
+									</global-af>
+									
+        
+								</global-afs>
+								
+       
+							</global>
+							
+       
+							<bgp-entity>
+								
+        
+								<neighbors>
+									
+         
+									<neighbor>
+										
+          
+										<neighbor-address>192.168.0.2</neighbor-address>
+										
+          
+										<create/>
+										
+          
+										<remote-as>
+											
+           
+											<as-xx>0</as-xx>
+											
+           
+											<as-yy>65002</as-yy>
+											
+          
+										</remote-as>
+										
+          
+										<neighbor-afs>
+											
+           
+											<neighbor-af>
+												
+            
+												<af-name>ipv4-unicast</af-name>
+												
+            
+												<activate/>
+												
+           
+											</neighbor-af>
+											
+          
+										</neighbor-afs>
+										
+         
+									</neighbor>
+									
+        
+								</neighbors>
+								
+       
+							</bgp-entity>
+							
+      
+						</default-vrf>
+						
+     
+					</four-byte-as>
+					
+    
+				</instance-as>
+				
+   
+			</instance>
+			
+  
+		</bgp>
+		
+  
+		<netconf-yang xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-man-netconf-cfg">
+			
+   
+			<agent>
+				
+    
+				<ssh>
+					
+     
+					<enable/>
+					
+    
+				</ssh>
+				
+   
+			</agent>
+			
+  
+		</netconf-yang>
+		
+  
+		<control-plane xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-lib-mpp-cfg">
+			
+   
+			<management-plane-protection>
+				
+    
+				<inband>
+					
+     
+					<interface-selection>
+						
+      
+						<interfaces>
+							
+       
+							<interface>
+								
+        
+								<interface-name>GigabitEthernet0/0/0/3</interface-name>
+								
+        
+								<all-protocols>
+									
+         
+									<peer-class>
+										
+          
+										<peer-all/>
+										
+         
+									</peer-class>
+									
+        
+								</all-protocols>
+								
+       
+							</interface>
+							
+      
+						</interfaces>
+						
+     
+					</interface-selection>
+					
+    
+				</inband>
+				
+    
+				<outband>
+					
+     
+					<interface-selection>
+						
+      
+						<interfaces>
+							
+       
+							<interface>
+								
+        
+								<interface-name>MgmtEth0/RP0/CPU0/0</interface-name>
+								
+        
+								<ssh-protocol>
+									
+         
+									<peer-class>
+										
+          
+										<peer-v4>
+											
+           
+											<peer-prefixes>
+												
+            
+												<peer-prefix>
+													
+             
+													<address-prefix>0.0.0.0/0</address-prefix>
+													
+            
+												</peer-prefix>
+												
+           
+											</peer-prefixes>
+											
+          
+										</peer-v4>
+										
+         
+									</peer-class>
+									
+        
+								</ssh-protocol>
+								
+        
+								<telnet-protocol>
+									
+         
+									<peer-class>
+										
+          
+										<peer-v4>
+											
+           
+											<peer-prefixes>
+												
+            
+												<peer-prefix>
+													
+             
+													<address-prefix>0.0.0.0/0</address-prefix>
+													
+            
+												</peer-prefix>
+												
+           
+											</peer-prefixes>
+											
+          
+										</peer-v4>
+										
+         
+									</peer-class>
+									
+        
+								</telnet-protocol>
+								
+       
+							</interface>
+							
+      
+						</interfaces>
+						
+     
+					</interface-selection>
+					
+    
+				</outband>
+				
+   
+			</management-plane-protection>
+			
+  
+		</control-plane>
+		
+  
+		<router-static xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ip-static-cfg">
+			
+   
+			<vrfs>
+				
+    
+				<vrf>
+					
+     
+					<vrf-name>mgmt</vrf-name>
+					
+     
+					<address-family>
+						
+      
+						<vrfipv4>
+							
+       
+							<vrf-unicast>
+								
+        
+								<vrf-prefixes>
+									
+         
+									<vrf-prefix>
+										
+          
+										<prefix>0.0.0.0</prefix>
+										
+          
+										<prefix-length>0</prefix-length>
+										
+          
+										<vrf-route>
+											
+           
+											<vrf-next-hop-table>
+												
+            
+												<vrf-next-hop-next-hop-address>
+													
+             
+													<next-hop-address>10.188.1.254</next-hop-address>
+													
+            
+												</vrf-next-hop-next-hop-address>
+												
+           
+											</vrf-next-hop-table>
+											
+          
+										</vrf-route>
+										
+         
+									</vrf-prefix>
+									
+        
+								</vrf-prefixes>
+								
+       
+							</vrf-unicast>
+							
+      
+						</vrfipv4>
+						
+     
+					</address-family>
+					
+    
+				</vrf>
+				
+   
+			</vrfs>
+			
+  
+		</router-static>
+		
+  
+		<ssh xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-crypto-ssh-cfg">
+			
+   
+			<server>
+				
+    
+				<v2/>
+				
+    
+				<vrf-table>
+					
+     
+					<vrf>
+						
+      
+						<vrf-name>mgmt</vrf-name>
+						
+      
+						<enable/>
+						
+     
+					</vrf>
+					
+     
+					<vrf>
+						
+      
+						<vrf-name>default</vrf-name>
+						
+      
+						<enable/>
+						
+     
+					</vrf>
+					
+    
+				</vrf-table>
+				
+    
+				<netconf>830</netconf>
+				
+   
+			</server>
+			
+  
+		</ssh>
+		
+  
+		<banners xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-infra-cfg">
+			
+   
+			<banner>
+				
+    
+				<banner-name>motd</banner-name>
+				
+    
+				<banner-text>#
+**************************
+*                        *
+*     2-UAT xrv9k        *
+*     10.1.1.1           *
+*                        *
+*     MGMT               *
+*     10.188.1.94        *
+*                        *
+*     admin/1234QWer     *
+*                        *
+**************************
+#</banner-text>
+				
+   
+			</banner>
+			
+  
+		</banners>
+		
+  
+		<interface-configurations xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ifmgr-cfg">
+			
+   
+			<interface-configuration>
+				
+    
+				<active>act</active>
+				
+    
+				<interface-name>Loopback1</interface-name>
+				
+    
+				<interface-virtual/>
+				
+    
+				<ipv4-network xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-io-cfg">
+					
+     
+					<addresses>
+						
+      
+						<primary>
+							
+       
+							<address>1.1.1.1</address>
+							
+       
+							<netmask>255.255.255.255</netmask>
+							
+      
+						</primary>
+						
+     
+					</addresses>
+					
+    
+				</ipv4-network>
+				
+   
+			</interface-configuration>
+			
+   
+			<interface-configuration>
+				
+    
+				<active>act</active>
+				
+    
+				<interface-name>MgmtEth0/RP0/CPU0/0</interface-name>
+				
+    
+				<vrf xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-rsi-cfg">mgmt</vrf>
+				
+    
+				<ipv4-network xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-io-cfg">
+					
+     
+					<addresses>
+						
+      
+						<primary>
+							
+       
+							<address>10.188.1.94</address>
+							
+       
+							<netmask>255.255.255.0</netmask>
+							
+      
+						</primary>
+						
+     
+					</addresses>
+					
+    
+				</ipv4-network>
+				
+   
+			</interface-configuration>
+			
+   
+			<interface-configuration>
+				
+    
+				<active>act</active>
+				
+    
+				<interface-name>GigabitEthernet0/0/0/0</interface-name>
+				
+    
+				<ipv4-network xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-io-cfg">
+					
+     
+					<addresses>
+						
+      
+						<primary>
+							
+       
+							<address>192.168.0.1</address>
+							
+       
+							<netmask>255.255.255.0</netmask>
+							
+      
+						</primary>
+						
+     
+					</addresses>
+					
+    
+				</ipv4-network>
+				
+    
+				<lldp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ethernet-lldp-cfg">
+					
+     
+					<lldp-intf-enter>true</lldp-intf-enter>
+					
+     
+					<enable>true</enable>
+					
+    
+				</lldp>
+				
+   
+			</interface-configuration>
+			
+   
+			<interface-configuration>
+				
+    
+				<active>act</active>
+				
+    
+				<interface-name>GigabitEthernet0/0/0/1</interface-name>
+				
+    
+				<shutdown/>
+				
+   
+			</interface-configuration>
+			
+   
+			<interface-configuration>
+				
+    
+				<active>act</active>
+				
+    
+				<interface-name>GigabitEthernet0/0/0/2</interface-name>
+				
+    
+				<shutdown/>
+				
+   
+			</interface-configuration>
+			
+   
+			<interface-configuration>
+				
+    
+				<active>act</active>
+				
+    
+				<interface-name>GigabitEthernet0/0/0/3</interface-name>
+				
+    
+				<ipv4-network xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-io-cfg">
+					
+     
+					<addresses>
+						
+      
+						<primary>
+							
+       
+							<address>10.1.1.1</address>
+							
+       
+							<netmask>255.255.255.0</netmask>
+							
+      
+						</primary>
+						
+     
+					</addresses>
+					
+    
+				</ipv4-network>
+				
+   
+			</interface-configuration>
+			
+  
+		</interface-configurations>
+		
+  
+		<aaa xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-aaa-lib-cfg">
+			
+   
+			<usernames xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-aaa-locald-cfg">
+				
+    
+				<username>
+					
+     
+					<ordering-index>0</ordering-index>
+					
+     
+					<name>admin</name>
+					
+     
+					<usergroup-under-usernames>
+						
+      
+						<usergroup-under-username>
+							
+       
+							<name>root-lr</name>
+							
+      
+						</usergroup-under-username>
+						
+      
+						<usergroup-under-username>
+							
+       
+							<name>cisco-support</name>
+							
+      
+						</usergroup-under-username>
+						
+     
+					</usergroup-under-usernames>
+					
+     
+					<secret>
+						
+      
+						<type>type10</type>
+						
+      
+						<secret10>$6$RL/kR1J.Qr.rBR1.$gfe50LGXrkD3NbijLXgMiIpt6hTlTAbT9lTelKBs6zB8wrUhWYa1U57Q5qxRQ3ugDFR8NLAx1o.0Ex/.KvCNI0</secret10>
+						
+     
+					</secret>
+					
+    
+				</username>
+				
+   
+			</usernames>
+			
+  
+		</aaa>
+		
+  
+		<ip xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ip-tcp-cfg">
+			
+   
+			<cinetd>
+				
+    
+				<services>
+					
+     
+					<telnet>
+						
+      
+						<vrfs>
+							
+       
+							<vrf>
+								
+        
+								<vrf-name>mgmt</vrf-name>
+								
+        
+								<ipv4>
+									
+         
+									<tcp>
+										
+          
+										<maximum-server>10</maximum-server>
+										
+         
+									</tcp>
+									
+        
+								</ipv4>
+								
+       
+							</vrf>
+							
+       
+							<vrf>
+								
+        
+								<vrf-name>default</vrf-name>
+								
+        
+								<ipv4>
+									
+         
+									<tcp>
+										
+          
+										<maximum-server>10</maximum-server>
+										
+         
+									</tcp>
+									
+        
+								</ipv4>
+								
+       
+							</vrf>
+							
+      
+						</vrfs>
+						
+     
+					</telnet>
+					
+    
+				</services>
+				
+   
+			</cinetd>
+			
+  
+		</ip>
+		
+  
+		<vrfs xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-rsi-cfg">
+			
+   
+			<vrf>
+				
+    
+				<vrf-name>mgmt</vrf-name>
+				
+    
+				<create/>
+				
+    
+				<afs>
+					
+     
+					<af>
+						
+      
+						<af-name>ipv4</af-name>
+						
+      
+						<saf-name>unicast</saf-name>
+						
+      
+						<topology-name>default</topology-name>
+						
+      
+						<create/>
+						
+     
+					</af>
+					
+    
+				</afs>
+				
+   
+			</vrf>
+			
+  
+		</vrfs>
+		
+  
+		<banners xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-banner-cfg">
+			
+   
+			<banner>
+				
+    
+				<banner-type>motd</banner-type>
+				
+    
+				<line>#
+**************************
+*                        *
+*     2-UAT xrv9k        *
+*     10.1.1.1           *
+*                        *
+*     MGMT               *
+*     10.188.1.94        *
+*                        *
+*     admin/1234QWer     *
+*                        *
+**************************
+#</line>
+				
+   
+			</banner>
+			
+  
+		</banners>
+		
+  
+		<telnet xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-telnet-cfg">
+			
+   
+			<vrfs>
+				
+    
+				<vrf>
+					
+     
+					<vrf-name>mgmt</vrf-name>
+					
+     
+					<ipv4>
+						
+      
+						<server>
+							
+       
+							<max-servers>10</max-servers>
+							
+      
+						</server>
+						
+     
+					</ipv4>
+					
+    
+				</vrf>
+				
+    
+				<vrf>
+					
+     
+					<vrf-name>default</vrf-name>
+					
+     
+					<ipv4>
+						
+      
+						<server>
+							
+       
+							<max-servers>10</max-servers>
+							
+      
+						</server>
+						
+     
+					</ipv4>
+					
+    
+				</vrf>
+				
+   
+			</vrfs>
+			
+  
+		</telnet>
+		
+  
+		<line xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-line-cfg">
+			
+   
+			<default>
+				
+    
+				<transport>
+					
+     
+					<input>
+						
+      
+						<all/>
+						
+     
+					</input>
+					
+    
+				</transport>
+				
+   
+			</default>
+			
+  
+		</line>
+		
+  
+		<router xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-router-bgp-cfg">
+			
+   
+			<bgp>
+				
+    
+				<as>
+					
+     
+					<as-number>65001</as-number>
+					
+     
+					<bgp>
+						
+      
+						<router-id>1.1.1.1</router-id>
+						
+     
+					</bgp>
+					
+     
+					<address-families>
+						
+      
+						<address-family>
+							
+       
+							<af-name>ipv4-unicast</af-name>
+							
+      
+						</address-family>
+						
+     
+					</address-families>
+					
+     
+					<neighbors>
+						
+      
+						<neighbor>
+							
+       
+							<neighbor-address>192.168.0.2</neighbor-address>
+							
+       
+							<remote-as>65002</remote-as>
+							
+       
+							<address-families>
+								
+        
+								<address-family>
+									
+         
+									<af-name>ipv4-unicast</af-name>
+									
+        
+								</address-family>
+								
+       
+							</address-families>
+							
+      
+						</neighbor>
+						
+     
+					</neighbors>
+					
+    
+				</as>
+				
+   
+			</bgp>
+			
+  
+		</router>
+		
+  
+		<control-plane xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-control-plane-cfg">
+			
+   
+			<management-plane>
+				
+    
+				<inband>
+					
+     
+					<interfaces>
+						
+      
+						<interface>
+							
+       
+							<interface-name>GigabitEthernet0/0/0/3</interface-name>
+							
+       
+							<allow>
+								
+        
+								<all/>
+								
+       
+							</allow>
+							
+      
+						</interface>
+						
+     
+					</interfaces>
+					
+    
+				</inband>
+				
+    
+				<out-of-band>
+					
+     
+					<interfaces>
+						
+      
+						<interface>
+							
+       
+							<interface-name>MgmtEth0/RP0/CPU0/0</interface-name>
+							
+       
+							<allow>
+								
+        
+								<ssh-peer>
+									
+         
+									<address>
+										
+          
+										<ipv4>
+											
+           
+											<ipv4-address-prefixes>
+												
+            
+												<ipv4-address-prefix>
+													
+             
+													<address>0.0.0.0</address>
+													
+             
+													<length>0</length>
+													
+            
+												</ipv4-address-prefix>
+												
+           
+											</ipv4-address-prefixes>
+											
+          
+										</ipv4>
+										
+         
+									</address>
+									
+        
+								</ssh-peer>
+								
+        
+								<telnet-peer>
+									
+         
+									<address>
+										
+          
+										<ipv4>
+											
+           
+											<ipv4-address-prefixes>
+												
+            
+												<ipv4-address-prefix>
+													
+             
+													<address>0.0.0.0</address>
+													
+             
+													<length>0</length>
+													
+            
+												</ipv4-address-prefix>
+												
+           
+											</ipv4-address-prefixes>
+											
+          
+										</ipv4>
+										
+         
+									</address>
+									
+        
+								</telnet-peer>
+								
+       
+							</allow>
+							
+      
+						</interface>
+						
+     
+					</interfaces>
+					
+    
+				</out-of-band>
+				
+   
+			</management-plane>
+			
+  
+		</control-plane>
+		
+  
+		<interfaces xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-interface-cfg">
+			
+   
+			<interface>
+				
+    
+				<interface-name>Loopback1</interface-name>
+				
+    
+				<ipv4>
+					
+     
+					<addresses xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-if-ip-address-cfg">
+						
+      
+						<address>
+							
+       
+							<address>1.1.1.1</address>
+							
+       
+							<netmask>255.255.255.255</netmask>
+							
+      
+						</address>
+						
+     
+					</addresses>
+					
+    
+				</ipv4>
+				
+   
+			</interface>
+			
+   
+			<interface>
+				
+    
+				<interface-name>MgmtEth0/RP0/CPU0/0</interface-name>
+				
+    
+				<vrf xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-if-vrf-cfg">mgmt</vrf>
+				
+    
+				<ipv4>
+					
+     
+					<addresses xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-if-ip-address-cfg">
+						
+      
+						<address>
+							
+       
+							<address>10.188.1.94</address>
+							
+       
+							<netmask>255.255.255.0</netmask>
+							
+      
+						</address>
+						
+     
+					</addresses>
+					
+    
+				</ipv4>
+				
+   
+			</interface>
+			
+   
+			<interface>
+				
+    
+				<interface-name>GigabitEthernet0/0/0/0</interface-name>
+				
+    
+				<ipv4>
+					
+     
+					<addresses xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-if-ip-address-cfg">
+						
+      
+						<address>
+							
+       
+							<address>192.168.0.1</address>
+							
+       
+							<netmask>255.255.255.0</netmask>
+							
+      
+						</address>
+						
+     
+					</addresses>
+					
+    
+				</ipv4>
+				
+    
+				<lldp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-lldp-cfg">
+					
+     
+					<enable/>
+					
+    
+				</lldp>
+				
+   
+			</interface>
+			
+   
+			<interface>
+				
+    
+				<interface-name>GigabitEthernet0/0/0/1</interface-name>
+				
+    
+				<shutdown/>
+				
+   
+			</interface>
+			
+   
+			<interface>
+				
+    
+				<interface-name>GigabitEthernet0/0/0/2</interface-name>
+				
+    
+				<shutdown/>
+				
+   
+			</interface>
+			
+   
+			<interface>
+				
+    
+				<interface-name>GigabitEthernet0/0/0/3</interface-name>
+				
+    
+				<ipv4>
+					
+     
+					<addresses xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-if-ip-address-cfg">
+						
+      
+						<address>
+							
+       
+							<address>10.1.1.1</address>
+							
+       
+							<netmask>255.255.255.0</netmask>
+							
+      
+						</address>
+						
+     
+					</addresses>
+					
+    
+				</ipv4>
+				
+   
+			</interface>
+			
+  
+		</interfaces>
+		
+  
+		<vrfs xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-vrf-cfg">
+			
+   
+			<vrf>
+				
+    
+				<vrf-name>mgmt</vrf-name>
+				
+    
+				<address-family>
+					
+     
+					<ipv4>
+						
+      
+						<unicast/>
+						
+     
+					</ipv4>
+					
+    
+				</address-family>
+				
+   
+			</vrf>
+			
+  
+		</vrfs>
+		
+  
+		<router xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-router-static-cfg">
+			
+   
+			<static>
+				
+    
+				<vrfs>
+					
+     
+					<vrf>
+						
+      
+						<vrf-name>mgmt</vrf-name>
+						
+      
+						<address-family>
+							
+       
+							<ipv4>
+								
+        
+								<unicast>
+									
+         
+									<prefixes>
+										
+          
+										<prefix>
+											
+           
+											<prefix-address>0.0.0.0</prefix-address>
+											
+           
+											<prefix-length>0</prefix-length>
+											
+           
+											<nexthop-addresses>
+												
+            
+												<nexthop-address>
+													
+             
+													<address>10.188.1.254</address>
+													
+            
+												</nexthop-address>
+												
+           
+											</nexthop-addresses>
+											
+          
+										</prefix>
+										
+         
+									</prefixes>
+									
+        
+								</unicast>
+								
+       
+							</ipv4>
+							
+      
+						</address-family>
+						
+     
+					</vrf>
+					
+    
+				</vrfs>
+				
+   
+			</static>
+			
+  
+		</router>
+		
+  
+		<ssh xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-ssh-cfg">
+			
+   
+			<server>
+				
+    
+				<v2/>
+				
+    
+				<vrfs>
+					
+     
+					<vrf>
+						
+      
+						<vrf-name>mgmt</vrf-name>
+						
+     
+					</vrf>
+					
+     
+					<vrf>
+						
+      
+						<vrf-name>default</vrf-name>
+						
+     
+					</vrf>
+					
+    
+				</vrfs>
+				
+    
+				<netconf>
+					
+     
+					<port>830</port>
+					
+    
+				</netconf>
+				
+   
+			</server>
+			
+  
+		</ssh>
+		
+  
+		<xr-xml xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-xml-agent-cfg">
+			
+   
+			<agent>
+				
+    
+				<tty>
+					
+     
+					<iteration>
+						
+      
+						<size>off</size>
+						
+     
+					</iteration>
+					
+    
+				</tty>
+				
+   
+			</agent>
+			
+  
+		</xr-xml>
+		
+  
+		<netconf xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-xml-agent-cfg">
+			
+   
+			<agent>
+				
+    
+				<tty/>
+				
+   
+			</agent>
+			
+  
+		</netconf>
+		
+  
+		<lldp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-lldp-cfg"/>
+		
+  
+		<aaa xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-aaa-cfg">
+			
+   
+			<usernames xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-aaa-task-user-cfg">
+				
+    
+				<username>
+					
+     
+					<ordering-index>0</ordering-index>
+					
+     
+					<name>admin</name>
+					
+     
+					<group>
+						
+      
+						<root-lr/>
+						
+      
+						<cisco-support/>
+						
+     
+					</group>
+					
+     
+					<secret>
+						
+      
+						<ten>$6$RL/kR1J.Qr.rBR1.$gfe50LGXrkD3NbijLXgMiIpt6hTlTAbT9lTelKBs6zB8wrUhWYa1U57Q5qxRQ3ugDFR8NLAx1o.0Ex/.KvCNI0</ten>
+						
+     
+					</secret>
+					
+    
+				</username>
+				
+   
+			</usernames>
+			
+  
+		</aaa>
+		
+  
+		<call-home xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-call-home-cfg">
+			
+   
+			<service>
+				
+    
+				<active/>
+				
+   
+			</service>
+			
+   
+			<contact>
+				
+    
+				<smart-licensing/>
+				
+   
+			</contact>
+			
+   
+			<profiles>
+				
+    
+				<profile>
+					
+     
+					<profile-name>CiscoTAC-1</profile-name>
+					
+     
+					<active/>
+					
+     
+					<destination>
+						
+      
+						<transport-method>
+							
+       
+							<http/>
+							
+      
+						</transport-method>
+						
+     
+					</destination>
+					
+    
+				</profile>
+				
+   
+			</profiles>
+			
+  
+		</call-home>
+		
+  
+		<netconf-yang xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-netconf-yang-cfg">
+			
+   
+			<agent>
+				
+    
+				<ssh/>
+				
+   
+			</agent>
+			
+  
+		</netconf-yang>
+		
+  
+		<vty-pool xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-um-vty-pool-cfg">
+			
+   
+			<default>
+				
+    
+				<first-vty-number>0</first-vty-number>
+				
+    
+				<last-vty-number>20</last-vty-number>
+				
+    
+				<line-template>default</line-template>
+				
+   
+			</default>
+			
+  
+		</vty-pool>
+		
+  
+		<aaa xmlns="http://tail-f.com/ns/aaa/1.1">
+			
+   
+			<authentication>
+				
+    
+				<users>
+					
+     
+					<user>
+						
+      
+						<name>admin</name>
+						
+      
+						<uid>9000</uid>
+						
+      
+						<gid>100</gid>
+						
+      
+						<password>$6$RL/kR1J.Qr.rBR1.$gfe50LGXrkD3NbijLXgMiIpt6hTlTAbT9lTelKBs6zB8wrUhWYa1U57Q5qxRQ3ugDFR8NLAx1o.0Ex/.KvCNI0</password>
+						
+      
+						<ssh_keydir>/var/confd/homes/admin/.ssh</ssh_keydir>
+						
+      
+						<homedir>/var/confd/homes/admin</homedir>
+						
+     
+					</user>
+					
+    
+				</users>
+				
+    
+				<groups>
+					
+     
+					<group>
+						
+      
+						<name>aaa-r</name>
+						
+      
+						<gid>100</gid>
+						
+      
+						<users>%%__system_user__%%</users>
+						
+     
+					</group>
+					
+     
+					<group>
+						
+      
+						<name>admin-r</name>
+						
+      
+						<gid>100</gid>
+						
+      
+						<users>%%__system_user__%%</users>
+						
+     
+					</group>
+					
+     
+					<group>
+						
+      
+						<name>root-system</name>
+						
+      
+						<gid>100</gid>
+						
+      
+						<users>%%__system_user__%% admin</users>
+						
+     
+					</group>
+					
+    
+				</groups>
+				
+   
+			</authentication>
+			
+   
+			<authorization>
+				
+    
+				<cmdrules>
+					
+     
+					<cmdrule>
+						
+      
+						<index>1</index>
+						
+      
+						<context>*</context>
+						
+      
+						<command>*</command>
+						
+      
+						<group>root-system</group>
+						
+      
+						<ops>rx</ops>
+						
+      
+						<action>accept</action>
+						
+     
+					</cmdrule>
+					
+     
+					<cmdrule>
+						
+      
+						<index>2</index>
+						
+      
+						<context>*</context>
+						
+      
+						<command>show running-config aaa</command>
+						
+      
+						<group>aaa-r</group>
+						
+      
+						<ops>rx</ops>
+						
+      
+						<action>accept</action>
+						
+     
+					</cmdrule>
+					
+     
+					<cmdrule>
+						
+      
+						<index>3</index>
+						
+      
+						<context>*</context>
+						
+      
+						<command>show tech-support aaa</command>
+						
+      
+						<group>aaa-r</group>
+						
+      
+						<ops>rx</ops>
+						
+      
+						<action>accept</action>
+						
+     
+					</cmdrule>
+					
+     
+					<cmdrule>
+						
+      
+						<index>4</index>
+						
+      
+						<context>*</context>
+						
+      
+						<command>show aaa</command>
+						
+      
+						<group>aaa-r</group>
+						
+      
+						<ops>rx</ops>
+						
+      
+						<action>accept</action>
+						
+     
+					</cmdrule>
+					
+     
+					<cmdrule>
+						
+      
+						<index>5</index>
+						
+      
+						<context>*</context>
+						
+      
+						<command>show</command>
+						
+      
+						<group>admin-r</group>
+						
+      
+						<ops>rx</ops>
+						
+      
+						<action>accept</action>
+						
+     
+					</cmdrule>
+					
+    
+				</cmdrules>
+				
+    
+				<datarules>
+					
+     
+					<datarule>
+						
+      
+						<index>1</index>
+						
+      
+						<namespace>*</namespace>
+						
+      
+						<context>*</context>
+						
+      
+						<keypath>*</keypath>
+						
+      
+						<group>root-system</group>
+						
+      
+						<ops>rwx</ops>
+						
+      
+						<action>accept</action>
+						
+     
+					</datarule>
+					
+     
+					<datarule>
+						
+      
+						<index>2</index>
+						
+      
+						<namespace>*</namespace>
+						
+      
+						<context>*</context>
+						
+      
+						<keypath>/aaa</keypath>
+						
+      
+						<group>aaa-r</group>
+						
+      
+						<ops>r</ops>
+						
+      
+						<action>accept</action>
+						
+     
+					</datarule>
+					
+     
+					<datarule>
+						
+      
+						<index>3</index>
+						
+      
+						<namespace>*</namespace>
+						
+      
+						<context>*</context>
+						
+      
+						<keypath>/aaa</keypath>
+						
+      
+						<group>admin-r</group>
+						
+      
+						<ops>rwx</ops>
+						
+      
+						<action>reject</action>
+						
+     
+					</datarule>
+					
+     
+					<datarule>
+						
+      
+						<index>4</index>
+						
+      
+						<namespace>*</namespace>
+						
+      
+						<context>*</context>
+						
+      
+						<keypath>/</keypath>
+						
+      
+						<group>admin-r</group>
+						
+      
+						<ops>r</ops>
+						
+      
+						<action>accept</action>
+						
+     
+					</datarule>
+					
+    
+				</datarules>
+				
+   
+			</authorization>
+			
+   
+			<admin-accounting xmlns="http://www.cisco.com/ns/yang/Cisco-IOS-XR-sysadmin-aaa-command-accounting">
+				
+    
+				<enable>false</enable>
+				
+   
+			</admin-accounting>
+			
+  
+		</aaa>
+		
+  
+		<SNMP-COMMUNITY-MIB xmlns="http://tail-f.com/ns/mibs/SNMP-COMMUNITY-MIB/200308060000Z">
+			
+   
+			<snmpCommunityTable>
+				
+    
+				<snmpCommunityEntry>
+					
+     
+					<snmpCommunityIndex>public</snmpCommunityIndex>
+					
+     
+					<snmpCommunityName>public</snmpCommunityName>
+					
+     
+					<snmpCommunitySecurityName>public</snmpCommunitySecurityName>
+					
+     
+					<snmpCommunityContextEngineID>80:00:61:81:05:01</snmpCommunityContextEngineID>
+					
+     
+					<snmpCommunityContextName/>
+					
+     
+					<snmpCommunityTransportTag/>
+					
+     
+					<snmpCommunityStorageType>permanent</snmpCommunityStorageType>
+					
+    
+				</snmpCommunityEntry>
+				
+   
+			</snmpCommunityTable>
+			
+  
+		</SNMP-COMMUNITY-MIB>
+		
+  
+		<SNMP-NOTIFICATION-MIB xmlns="http://tail-f.com/ns/mibs/SNMP-NOTIFICATION-MIB/200210140000Z">
+			
+   
+			<snmpNotifyTable>
+				
+    
+				<snmpNotifyEntry>
+					
+     
+					<snmpNotifyName>std_v1_trap</snmpNotifyName>
+					
+     
+					<snmpNotifyTag>std_v1_trap</snmpNotifyTag>
+					
+     
+					<snmpNotifyType>trap</snmpNotifyType>
+					
+     
+					<snmpNotifyStorageType>nonVolatile</snmpNotifyStorageType>
+					
+    
+				</snmpNotifyEntry>
+				
+    
+				<snmpNotifyEntry>
+					
+     
+					<snmpNotifyName>std_v2_inform</snmpNotifyName>
+					
+     
+					<snmpNotifyTag>std_v2_inform</snmpNotifyTag>
+					
+     
+					<snmpNotifyType>inform</snmpNotifyType>
+					
+     
+					<snmpNotifyStorageType>nonVolatile</snmpNotifyStorageType>
+					
+    
+				</snmpNotifyEntry>
+				
+    
+				<snmpNotifyEntry>
+					
+     
+					<snmpNotifyName>std_v2_trap</snmpNotifyName>
+					
+     
+					<snmpNotifyTag>std_v2_trap</snmpNotifyTag>
+					
+     
+					<snmpNotifyType>trap</snmpNotifyType>
+					
+     
+					<snmpNotifyStorageType>nonVolatile</snmpNotifyStorageType>
+					
+    
+				</snmpNotifyEntry>
+				
+    
+				<snmpNotifyEntry>
+					
+     
+					<snmpNotifyName>std_v3_inform</snmpNotifyName>
+					
+     
+					<snmpNotifyTag>std_v3_inform</snmpNotifyTag>
+					
+     
+					<snmpNotifyType>inform</snmpNotifyType>
+					
+     
+					<snmpNotifyStorageType>nonVolatile</snmpNotifyStorageType>
+					
+    
+				</snmpNotifyEntry>
+				
+    
+				<snmpNotifyEntry>
+					
+     
+					<snmpNotifyName>std_v3_trap</snmpNotifyName>
+					
+     
+					<snmpNotifyTag>std_v3_trap</snmpNotifyTag>
+					
+     
+					<snmpNotifyType>trap</snmpNotifyType>
+					
+     
+					<snmpNotifyStorageType>nonVolatile</snmpNotifyStorageType>
+					
+    
+				</snmpNotifyEntry>
+				
+   
+			</snmpNotifyTable>
+			
+  
+		</SNMP-NOTIFICATION-MIB>
+		
+  
+		<SNMP-TARGET-MIB xmlns="http://tail-f.com/ns/mibs/SNMP-TARGET-MIB/200210140000Z">
+			
+   
+			<snmpTargetAddrTable>
+				
+    
+				<snmpTargetAddrEntry>
+					
+     
+					<snmpTargetAddrName>127.0.0.1 v1</snmpTargetAddrName>
+					
+     
+					<snmpTargetAddrTDomain>1.3.6.1.6.1.1</snmpTargetAddrTDomain>
+					
+     
+					<snmpTargetAddrTAddress>127.0.0.1.19.136</snmpTargetAddrTAddress>
+					
+     
+					<snmpTargetAddrTimeout>1500</snmpTargetAddrTimeout>
+					
+     
+					<snmpTargetAddrRetryCount>3</snmpTargetAddrRetryCount>
+					
+     
+					<snmpTargetAddrTagList>std_v1_trap std_trap std_v1_inform std_inform</snmpTargetAddrTagList>
+					
+     
+					<snmpTargetAddrParams>target_v1</snmpTargetAddrParams>
+					
+     
+					<snmpTargetAddrStorageType>nonVolatile</snmpTargetAddrStorageType>
+					
+     
+					<snmpTargetAddrEngineID/>
+					
+     
+					<snmpTargetAddrTMask/>
+					
+     
+					<snmpTargetAddrMMS>2048</snmpTargetAddrMMS>
+					
+     
+					<enabled>true</enabled>
+					
+    
+				</snmpTargetAddrEntry>
+				
+    
+				<snmpTargetAddrEntry>
+					
+     
+					<snmpTargetAddrName>127.0.0.1 v2</snmpTargetAddrName>
+					
+     
+					<snmpTargetAddrTDomain>1.3.6.1.6.1.1</snmpTargetAddrTDomain>
+					
+     
+					<snmpTargetAddrTAddress>127.0.0.1.23.112</snmpTargetAddrTAddress>
+					
+     
+					<snmpTargetAddrTimeout>1500</snmpTargetAddrTimeout>
+					
+     
+					<snmpTargetAddrRetryCount>3</snmpTargetAddrRetryCount>
+					
+     
+					<snmpTargetAddrTagList>std_v2_trap std_trap std_v2_inform std_inform</snmpTargetAddrTagList>
+					
+     
+					<snmpTargetAddrParams>target_v2</snmpTargetAddrParams>
+					
+     
+					<snmpTargetAddrStorageType>nonVolatile</snmpTargetAddrStorageType>
+					
+     
+					<snmpTargetAddrEngineID/>
+					
+     
+					<snmpTargetAddrTMask/>
+					
+     
+					<snmpTargetAddrMMS>2048</snmpTargetAddrMMS>
+					
+     
+					<enabled>true</enabled>
+					
+    
+				</snmpTargetAddrEntry>
+				
+    
+				<snmpTargetAddrEntry>
+					
+     
+					<snmpTargetAddrName>127.0.0.1 v3</snmpTargetAddrName>
+					
+     
+					<snmpTargetAddrTDomain>1.3.6.1.6.1.1</snmpTargetAddrTDomain>
+					
+     
+					<snmpTargetAddrTAddress>127.0.0.1.27.88</snmpTargetAddrTAddress>
+					
+     
+					<snmpTargetAddrTimeout>1500</snmpTargetAddrTimeout>
+					
+     
+					<snmpTargetAddrRetryCount>3</snmpTargetAddrRetryCount>
+					
+     
+					<snmpTargetAddrTagList>std_v3_trap std_trap</snmpTargetAddrTagList>
+					
+     
+					<snmpTargetAddrParams>trap_target_v3</snmpTargetAddrParams>
+					
+     
+					<snmpTargetAddrStorageType>nonVolatile</snmpTargetAddrStorageType>
+					
+     
+					<snmpTargetAddrEngineID/>
+					
+     
+					<snmpTargetAddrTMask/>
+					
+     
+					<snmpTargetAddrMMS>2048</snmpTargetAddrMMS>
+					
+     
+					<enabled>true</enabled>
+					
+    
+				</snmpTargetAddrEntry>
+				
+    
+				<snmpTargetAddrEntry>
+					
+     
+					<snmpTargetAddrName>127.0.0.1 v3.inform</snmpTargetAddrName>
+					
+     
+					<snmpTargetAddrTDomain>1.3.6.1.6.1.1</snmpTargetAddrTDomain>
+					
+     
+					<snmpTargetAddrTAddress>127.0.0.1.27.88</snmpTargetAddrTAddress>
+					
+     
+					<snmpTargetAddrTimeout>1500</snmpTargetAddrTimeout>
+					
+     
+					<snmpTargetAddrRetryCount>3</snmpTargetAddrRetryCount>
+					
+     
+					<snmpTargetAddrTagList>std_v3_inform std_inform</snmpTargetAddrTagList>
+					
+     
+					<snmpTargetAddrParams>inform_target_v3</snmpTargetAddrParams>
+					
+     
+					<snmpTargetAddrStorageType>nonVolatile</snmpTargetAddrStorageType>
+					
+     
+					<snmpTargetAddrEngineID>80:00:1f:88:04:74:65:73:74:69:6e:67</snmpTargetAddrEngineID>
+					
+     
+					<snmpTargetAddrTMask/>
+					
+     
+					<snmpTargetAddrMMS>2048</snmpTargetAddrMMS>
+					
+     
+					<enabled>true</enabled>
+					
+    
+				</snmpTargetAddrEntry>
+				
+   
+			</snmpTargetAddrTable>
+			
+   
+			<snmpTargetParamsTable>
+				
+    
+				<snmpTargetParamsEntry>
+					
+     
+					<snmpTargetParamsName>inform_target_v3</snmpTargetParamsName>
+					
+     
+					<snmpTargetParamsMPModel>3</snmpTargetParamsMPModel>
+					
+     
+					<snmpTargetParamsSecurityModel>3</snmpTargetParamsSecurityModel>
+					
+     
+					<snmpTargetParamsSecurityName>remote</snmpTargetParamsSecurityName>
+					
+     
+					<snmpTargetParamsSecurityLevel>noAuthNoPriv</snmpTargetParamsSecurityLevel>
+					
+     
+					<snmpTargetParamsStorageType>nonVolatile</snmpTargetParamsStorageType>
+					
+    
+				</snmpTargetParamsEntry>
+				
+    
+				<snmpTargetParamsEntry>
+					
+     
+					<snmpTargetParamsName>target_v1</snmpTargetParamsName>
+					
+     
+					<snmpTargetParamsMPModel>0</snmpTargetParamsMPModel>
+					
+     
+					<snmpTargetParamsSecurityModel>1</snmpTargetParamsSecurityModel>
+					
+     
+					<snmpTargetParamsSecurityName>public</snmpTargetParamsSecurityName>
+					
+     
+					<snmpTargetParamsSecurityLevel>noAuthNoPriv</snmpTargetParamsSecurityLevel>
+					
+     
+					<snmpTargetParamsStorageType>nonVolatile</snmpTargetParamsStorageType>
+					
+    
+				</snmpTargetParamsEntry>
+				
+    
+				<snmpTargetParamsEntry>
+					
+     
+					<snmpTargetParamsName>target_v2</snmpTargetParamsName>
+					
+     
+					<snmpTargetParamsMPModel>1</snmpTargetParamsMPModel>
+					
+     
+					<snmpTargetParamsSecurityModel>2</snmpTargetParamsSecurityModel>
+					
+     
+					<snmpTargetParamsSecurityName>public</snmpTargetParamsSecurityName>
+					
+     
+					<snmpTargetParamsSecurityLevel>noAuthNoPriv</snmpTargetParamsSecurityLevel>
+					
+     
+					<snmpTargetParamsStorageType>nonVolatile</snmpTargetParamsStorageType>
+					
+    
+				</snmpTargetParamsEntry>
+				
+    
+				<snmpTargetParamsEntry>
+					
+     
+					<snmpTargetParamsName>trap_target_v3</snmpTargetParamsName>
+					
+     
+					<snmpTargetParamsMPModel>3</snmpTargetParamsMPModel>
+					
+     
+					<snmpTargetParamsSecurityModel>3</snmpTargetParamsSecurityModel>
+					
+     
+					<snmpTargetParamsSecurityName>public</snmpTargetParamsSecurityName>
+					
+     
+					<snmpTargetParamsSecurityLevel>noAuthNoPriv</snmpTargetParamsSecurityLevel>
+					
+     
+					<snmpTargetParamsStorageType>nonVolatile</snmpTargetParamsStorageType>
+					
+    
+				</snmpTargetParamsEntry>
+				
+   
+			</snmpTargetParamsTable>
+			
+  
+		</SNMP-TARGET-MIB>
+		
+  
+		<SNMP-USER-BASED-SM-MIB xmlns="http://tail-f.com/ns/mibs/SNMP-USER-BASED-SM-MIB/200210160000Z">
+			
+   
+			<usmUserTable>
+				
+    
+				<usmUserEntry>
+					
+     
+					<usmUserEngineID>80:00:61:81:05:01</usmUserEngineID>
+					
+     
+					<usmUserName>initial</usmUserName>
+					
+     
+					<usmUserSecurityName>initial</usmUserSecurityName>
+					
+     
+					<usmUserAuthProtocol>1.3.6.1.6.3.10.1.1.1</usmUserAuthProtocol>
+					
+     
+					<usmUserPrivProtocol>1.3.6.1.6.3.10.1.2.1</usmUserPrivProtocol>
+					
+     
+					<usmUserStorageType>nonVolatile</usmUserStorageType>
+					
+    
+				</usmUserEntry>
+				
+    
+				<usmUserEntry>
+					
+     
+					<usmUserEngineID>80:00:61:81:05:01</usmUserEngineID>
+					
+     
+					<usmUserName>initial_auth</usmUserName>
+					
+     
+					<usmUserSecurityName>initial_auth</usmUserSecurityName>
+					
+     
+					<usmUserAuthProtocol>1.3.6.1.6.3.10.1.1.2</usmUserAuthProtocol>
+					
+     
+					<usmUserPrivProtocol>1.3.6.1.6.3.10.1.2.1</usmUserPrivProtocol>
+					
+     
+					<usmUserStorageType>nonVolatile</usmUserStorageType>
+					
+     
+					<usmUserAuthKey>10:2c:bd:65:e3:eb:e2:16:0d:63:db:23:73:f3:17:b2</usmUserAuthKey>
+					
+    
+				</usmUserEntry>
+				
+    
+				<usmUserEntry>
+					
+     
+					<usmUserEngineID>80:00:61:81:05:01</usmUserEngineID>
+					
+     
+					<usmUserName>initial_authPriv</usmUserName>
+					
+     
+					<usmUserSecurityName>initial_authPriv</usmUserSecurityName>
+					
+     
+					<usmUserAuthProtocol>1.3.6.1.6.3.10.1.1.2</usmUserAuthProtocol>
+					
+     
+					<usmUserPrivProtocol>1.3.6.1.6.3.10.1.2.2</usmUserPrivProtocol>
+					
+     
+					<usmUserStorageType>nonVolatile</usmUserStorageType>
+					
+     
+					<usmUserAuthKey>10:2c:bd:65:e3:eb:e2:16:0d:63:db:23:73:f3:17:b2</usmUserAuthKey>
+					
+     
+					<usmUserPrivKey>10:2c:bd:65:e3:eb:e2:16:0d:63:db:23:73:f3:17:b2</usmUserPrivKey>
+					
+    
+				</usmUserEntry>
+				
+   
+			</usmUserTable>
+			
+  
+		</SNMP-USER-BASED-SM-MIB>
+		
+  
+		<SNMP-VIEW-BASED-ACM-MIB xmlns="http://tail-f.com/ns/mibs/SNMP-VIEW-BASED-ACM-MIB/200210160000Z">
+			
+   
+			<vacmSecurityToGroupTable>
+				
+    
+				<vacmSecurityToGroupEntry>
+					
+     
+					<vacmSecurityModel>1</vacmSecurityModel>
+					
+     
+					<vacmSecurityName>public</vacmSecurityName>
+					
+     
+					<vacmGroupName>all-rights</vacmGroupName>
+					
+     
+					<vacmSecurityToGroupStorageType>nonVolatile</vacmSecurityToGroupStorageType>
+					
+    
+				</vacmSecurityToGroupEntry>
+				
+    
+				<vacmSecurityToGroupEntry>
+					
+     
+					<vacmSecurityModel>2</vacmSecurityModel>
+					
+     
+					<vacmSecurityName>public</vacmSecurityName>
+					
+     
+					<vacmGroupName>all-rights</vacmGroupName>
+					
+     
+					<vacmSecurityToGroupStorageType>nonVolatile</vacmSecurityToGroupStorageType>
+					
+    
+				</vacmSecurityToGroupEntry>
+				
+    
+				<vacmSecurityToGroupEntry>
+					
+     
+					<vacmSecurityModel>3</vacmSecurityModel>
+					
+     
+					<vacmSecurityName>initial</vacmSecurityName>
+					
+     
+					<vacmGroupName>initial</vacmGroupName>
+					
+     
+					<vacmSecurityToGroupStorageType>nonVolatile</vacmSecurityToGroupStorageType>
+					
+    
+				</vacmSecurityToGroupEntry>
+				
+    
+				<vacmSecurityToGroupEntry>
+					
+     
+					<vacmSecurityModel>3</vacmSecurityModel>
+					
+     
+					<vacmSecurityName>initial_auth</vacmSecurityName>
+					
+     
+					<vacmGroupName>initial</vacmGroupName>
+					
+     
+					<vacmSecurityToGroupStorageType>nonVolatile</vacmSecurityToGroupStorageType>
+					
+    
+				</vacmSecurityToGroupEntry>
+				
+    
+				<vacmSecurityToGroupEntry>
+					
+     
+					<vacmSecurityModel>3</vacmSecurityModel>
+					
+     
+					<vacmSecurityName>initial_authPriv</vacmSecurityName>
+					
+     
+					<vacmGroupName>initial</vacmGroupName>
+					
+     
+					<vacmSecurityToGroupStorageType>nonVolatile</vacmSecurityToGroupStorageType>
+					
+    
+				</vacmSecurityToGroupEntry>
+				
+   
+			</vacmSecurityToGroupTable>
+			
+   
+			<vacmAccessTable>
+				
+    
+				<vacmAccessEntry>
+					
+     
+					<vacmGroupName>initial</vacmGroupName>
+					
+     
+					<vacmAccessContextPrefix/>
+					
+     
+					<vacmAccessSecurityModel>3</vacmAccessSecurityModel>
+					
+     
+					<vacmAccessSecurityLevel>noAuthNoPriv</vacmAccessSecurityLevel>
+					
+     
+					<vacmAccessContextMatch>exact</vacmAccessContextMatch>
+					
+     
+					<vacmAccessReadViewName>internet</vacmAccessReadViewName>
+					
+     
+					<vacmAccessWriteViewName>internet</vacmAccessWriteViewName>
+					
+     
+					<vacmAccessNotifyViewName>internet</vacmAccessNotifyViewName>
+					
+     
+					<vacmAccessStorageType>nonVolatile</vacmAccessStorageType>
+					
+    
+				</vacmAccessEntry>
+				
+    
+				<vacmAccessEntry>
+					
+     
+					<vacmGroupName>initial</vacmGroupName>
+					
+     
+					<vacmAccessContextPrefix/>
+					
+     
+					<vacmAccessSecurityModel>3</vacmAccessSecurityModel>
+					
+     
+					<vacmAccessSecurityLevel>authNoPriv</vacmAccessSecurityLevel>
+					
+     
+					<vacmAccessContextMatch>exact</vacmAccessContextMatch>
+					
+     
+					<vacmAccessReadViewName>internet</vacmAccessReadViewName>
+					
+     
+					<vacmAccessWriteViewName>internet</vacmAccessWriteViewName>
+					
+     
+					<vacmAccessNotifyViewName>internet</vacmAccessNotifyViewName>
+					
+     
+					<vacmAccessStorageType>nonVolatile</vacmAccessStorageType>
+					
+    
+				</vacmAccessEntry>
+				
+    
+				<vacmAccessEntry>
+					
+     
+					<vacmGroupName>initial</vacmGroupName>
+					
+     
+					<vacmAccessContextPrefix/>
+					
+     
+					<vacmAccessSecurityModel>3</vacmAccessSecurityModel>
+					
+     
+					<vacmAccessSecurityLevel>authPriv</vacmAccessSecurityLevel>
+					
+     
+					<vacmAccessContextMatch>exact</vacmAccessContextMatch>
+					
+     
+					<vacmAccessReadViewName>internet</vacmAccessReadViewName>
+					
+     
+					<vacmAccessWriteViewName>internet</vacmAccessWriteViewName>
+					
+     
+					<vacmAccessNotifyViewName>internet</vacmAccessNotifyViewName>
+					
+     
+					<vacmAccessStorageType>nonVolatile</vacmAccessStorageType>
+					
+    
+				</vacmAccessEntry>
+				
+    
+				<vacmAccessEntry>
+					
+     
+					<vacmGroupName>all-rights</vacmGroupName>
+					
+     
+					<vacmAccessContextPrefix/>
+					
+     
+					<vacmAccessSecurityModel>0</vacmAccessSecurityModel>
+					
+     
+					<vacmAccessSecurityLevel>noAuthNoPriv</vacmAccessSecurityLevel>
+					
+     
+					<vacmAccessContextMatch>exact</vacmAccessContextMatch>
+					
+     
+					<vacmAccessReadViewName>internet</vacmAccessReadViewName>
+					
+     
+					<vacmAccessWriteViewName>internet</vacmAccessWriteViewName>
+					
+     
+					<vacmAccessNotifyViewName>internet</vacmAccessNotifyViewName>
+					
+     
+					<vacmAccessStorageType>nonVolatile</vacmAccessStorageType>
+					
+    
+				</vacmAccessEntry>
+				
+   
+			</vacmAccessTable>
+			
+   
+			<vacmViewTreeFamilyTable>
+				
+    
+				<vacmViewTreeFamilyEntry>
+					
+     
+					<vacmViewTreeFamilyViewName>internet</vacmViewTreeFamilyViewName>
+					
+     
+					<vacmViewTreeFamilySubtree>1.3.6.1</vacmViewTreeFamilySubtree>
+					
+     
+					<vacmViewTreeFamilyMask/>
+					
+     
+					<vacmViewTreeFamilyType>included</vacmViewTreeFamilyType>
+					
+     
+					<vacmViewTreeFamilyStorageType>nonVolatile</vacmViewTreeFamilyStorageType>
+					
+    
+				</vacmViewTreeFamilyEntry>
+				
+   
+			</vacmViewTreeFamilyTable>
+			
+  
+		</SNMP-VIEW-BASED-ACM-MIB>
+		
+  
+		<SNMPv2-MIB xmlns="http://tail-f.com/ns/mibs/SNMPv2-MIB/200210160000Z">
+			
+   
+			<system>
+				
+    
+				<sysContact/>
+				
+    
+				<sysName/>
+				
+    
+				<sysLocation/>
+				
+   
+			</system>
+			
+   
+			<snmp>
+				
+    
+				<snmpEnableAuthenTraps>disabled</snmpEnableAuthenTraps>
+				
+   
+			</snmp>
+			
+  
+		</SNMPv2-MIB>
+		
+  
+		<fpd xmlns="http://www.cisco.com/ns/yang/Cisco-IOS-XR-sysadmin-fpd-infra-cli-fpd">
+			
+   
+			<config>
+				
+    
+				<auto-upgrade>disable</auto-upgrade>
+				
+   
+			</config>
+			
+  
+		</fpd>
+		
+  
+		<sdr-config xmlns="http://www.cisco.com/ns/yang/Cisco-IOS-XR-sysadmin-sdr-mgr">
+			
+   
+			<sdr>
+				
+    
+				<name>default-sdr</name>
+				
+    
+				<resources>
+					
+     
+					<card-type>
+						
+      
+						<type>RP</type>
+						
+      
+						<vm-memory>2</vm-memory>
+						
+      
+						<vm-cpu>1</vm-cpu>
+						
+     
+					</card-type>
+					
+     
+					<card-type>
+						
+      
+						<type>LC</type>
+						
+      
+						<vm-memory>1</vm-memory>
+						
+      
+						<vm-cpu>1</vm-cpu>
+						
+     
+					</card-type>
+					
+    
+				</resources>
+				
+    
+				<location>
+					
+     
+					<node-location>all</node-location>
+					
+    
+				</location>
+				
+   
+			</sdr>
+			
+  
+		</sdr-config>
+		
+  
+		<private-sdr xmlns="http://www.cisco.com/ns/yang/Cisco-IOS-XR-sysadmin-sdr-mgr">
+			
+   
+			<sdr-name>
+				
+    
+				<name>default-sdr</name>
+				
+    
+				<id>2</id>
+				
+    
+				<lead_rack0>0</lead_rack0>
+				
+    
+				<lead_rack1>0</lead_rack1>
+				
+    
+				<pairing>
+					
+     
+					<num>0</num>
+					
+     
+					<second_exist>false</second_exist>
+					
+     
+					<rp1_rack>0</rp1_rack>
+					
+     
+					<rp1_slot>0</rp1_slot>
+					
+    
+				</pairing>
+				
+   
+			</sdr-name>
+			
+  
+		</private-sdr>
+		
+  
+		<service xmlns="http://www.cisco.com/ns/yang/Cisco-IOS-XR-sysadmin-services">
+			
+   
+			<cli>
+				
+    
+				<interactive>
+					
+     
+					<enabled>true</enabled>
+					
+    
+				</interactive>
+				
+   
+			</cli>
+			
+  
+		</service>
+		
+  
+		<vm xmlns="http://www.cisco.com/ns/yang/Cisco-IOS-XR-sysadmin-vm">
+			
+   
+			<config>
+				
+    
+				<memory>
+					
+     
+					<admin>1</admin>
+					
+     
+					<rp>7</rp>
+					
+     
+					<lc>7</lc>
+					
+    
+				</memory>
+				
+    
+				<cpu>
+					
+     
+					<assign>0-1/2-3</assign>
+					
+    
+				</cpu>
+				
+   
+			</config>
+			
+  
+		</vm>
+		
+  
+		<lldp xmlns="http://openconfig.net/yang/lldp">
+			
+   
+			<config>
+				
+    
+				<enabled>true</enabled>
+				
+   
+			</config>
+			
+   
+			<interfaces>
+				
+    
+				<interface>
+					
+     
+					<name>GigabitEthernet0/0/0/0</name>
+					
+     
+					<config>
+						
+      
+						<name>GigabitEthernet0/0/0/0</name>
+						
+      
+						<enabled>true</enabled>
+						
+     
+					</config>
+					
+    
+				</interface>
+				
+   
+			</interfaces>
+			
+  
+		</lldp>
+		
+  
+		<network-instances xmlns="http://openconfig.net/yang/network-instance">
+			
+   
+			<network-instance>
+				
+    
+				<name>default</name>
+				
+    
+				<protocols>
+					
+     
+					<protocol>
+						
+      
+						<identifier xmlns:idx="http://openconfig.net/yang/policy-types">idx:BGP</identifier>
+						
+      
+						<name>default</name>
+						
+      
+						<config>
+							
+       
+							<identifier xmlns:idx="http://openconfig.net/yang/policy-types">idx:BGP</identifier>
+							
+       
+							<name>default</name>
+							
+      
+						</config>
+						
+      
+						<bgp>
+							
+       
+							<global>
+								
+        
+								<config>
+									
+         
+									<as>65001</as>
+									
+         
+									<router-id>1.1.1.1</router-id>
+									
+        
+								</config>
+								
+        
+								<afi-safis>
+									
+         
+									<afi-safi>
+										
+          
+										<afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:IPV4_UNICAST</afi-safi-name>
+										
+          
+										<config>
+											
+           
+											<afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:IPV4_UNICAST</afi-safi-name>
+											
+           
+											<enabled>true</enabled>
+											
+          
+										</config>
+										
+         
+									</afi-safi>
+									
+        
+								</afi-safis>
+								
+       
+							</global>
+							
+       
+							<neighbors>
+								
+        
+								<neighbor>
+									
+         
+									<neighbor-address>192.168.0.2</neighbor-address>
+									
+         
+									<config>
+										
+          
+										<neighbor-address>192.168.0.2</neighbor-address>
+										
+          
+										<peer-as>65002</peer-as>
+										
+         
+									</config>
+									
+         
+									<afi-safis>
+										
+          
+										<afi-safi>
+											
+           
+											<afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:IPV4_UNICAST</afi-safi-name>
+											
+           
+											<config>
+												
+            
+												<afi-safi-name xmlns:idx="http://openconfig.net/yang/bgp-types">idx:IPV4_UNICAST</afi-safi-name>
+												
+            
+												<enabled>true</enabled>
+												
+           
+											</config>
+											
+          
+										</afi-safi>
+										
+         
+									</afi-safis>
+									
+        
+								</neighbor>
+								
+       
+							</neighbors>
+							
+      
+						</bgp>
+						
+     
+					</protocol>
+					
+    
+				</protocols>
+				
+   
+			</network-instance>
+			
+   
+			<network-instance>
+				
+    
+				<name>mgmt</name>
+				
+    
+				<protocols>
+					
+     
+					<protocol>
+						
+      
+						<identifier xmlns:idx="http://openconfig.net/yang/policy-types">idx:STATIC</identifier>
+						
+      
+						<name>DEFAULT</name>
+						
+      
+						<config>
+							
+       
+							<identifier xmlns:idx="http://openconfig.net/yang/policy-types">idx:STATIC</identifier>
+							
+       
+							<name>DEFAULT</name>
+							
+      
+						</config>
+						
+      
+						<static-routes>
+							
+       
+							<static>
+								
+        
+								<prefix>0.0.0.0/0</prefix>
+								
+        
+								<config>
+									
+         
+									<prefix>0.0.0.0/0</prefix>
+									
+        
+								</config>
+								
+        
+								<next-hops>
+									
+         
+									<next-hop>
+										
+          
+										<index>##10.188.1.254##</index>
+										
+          
+										<config>
+											
+           
+											<index>##10.188.1.254##</index>
+											
+           
+											<next-hop>10.188.1.254</next-hop>
+											
+          
+										</config>
+										
+         
+									</next-hop>
+									
+        
+								</next-hops>
+								
+       
+							</static>
+							
+      
+						</static-routes>
+						
+     
+					</protocol>
+					
+    
+				</protocols>
+				
+    
+				<interfaces>
+					
+     
+					<interface>
+						
+      
+						<id>MgmtEth0/RP0/CPU0/0</id>
+						
+      
+						<config>
+							
+       
+							<id>MgmtEth0/RP0/CPU0/0</id>
+							
+       
+							<interface>MgmtEth0/RP0/CPU0/0</interface>
+							
+       
+							<subinterface>0</subinterface>
+							
+      
+						</config>
+						
+     
+					</interface>
+					
+    
+				</interfaces>
+				
+    
+				<config>
+					
+     
+					<name>mgmt</name>
+					
+     
+					<enabled-address-families xmlns:idx="http://openconfig.net/yang/openconfig-types">idx:IPV4</enabled-address-families>
+					
+    
+				</config>
+				
+   
+			</network-instance>
+			
+  
+		</network-instances>
+		
+  
+		<system xmlns="http://openconfig.net/yang/system">
+			
+   
+			<ssh-server>
+				
+    
+				<config>
+					
+     
+					<enable>true</enable>
+					
+     
+					<protocol-version>V2</protocol-version>
+					
+    
+				</config>
+				
+   
+			</ssh-server>
+			
+   
+			<aaa>
+				
+    
+				<authentication>
+					
+     
+					<users>
+						
+      
+						<user>
+							
+       
+							<username>admin</username>
+							
+       
+							<config>
+								
+        
+								<username>admin</username>
+								
+        
+								<role>root-lr</role>
+								
+        
+								<password-hashed>$6$RL/kR1J.Qr.rBR1.$gfe50LGXrkD3NbijLXgMiIpt6hTlTAbT9lTelKBs6zB8wrUhWYa1U57Q5qxRQ3ugDFR8NLAx1o.0Ex/.KvCNI0</password-hashed>
+								
+       
+							</config>
+							
+      
+						</user>
+						
+     
+					</users>
+					
+    
+				</authentication>
+				
+   
+			</aaa>
+			
+  
+		</system>
+		
+  
+		<interfaces xmlns="http://openconfig.net/yang/interfaces">
+			
+   
+			<interface>
+				
+    
+				<name>Loopback1</name>
+				
+    
+				<config>
+					
+     
+					<name>Loopback1</name>
+					
+     
+					<type xmlns:idx="urn:ietf:params:xml:ns:yang:iana-if-type">idx:softwareLoopback</type>
+					
+    
+				</config>
+				
+    
+				<subinterfaces>
+					
+     
+					<subinterface>
+						
+      
+						<index>0</index>
+						
+      
+						<ipv4 xmlns="http://openconfig.net/yang/interfaces/ip">
+							
+       
+							<addresses>
+								
+        
+								<address>
+									
+         
+									<ip>1.1.1.1</ip>
+									
+         
+									<config>
+										
+          
+										<ip>1.1.1.1</ip>
+										
+          
+										<prefix-length>32</prefix-length>
+										
+         
+									</config>
+									
+        
+								</address>
+								
+       
+							</addresses>
+							
+      
+						</ipv4>
+						
+     
+					</subinterface>
+					
+    
+				</subinterfaces>
+				
+   
+			</interface>
+			
+   
+			<interface>
+				
+    
+				<name>MgmtEth0/RP0/CPU0/0</name>
+				
+    
+				<config>
+					
+     
+					<name>MgmtEth0/RP0/CPU0/0</name>
+					
+     
+					<type xmlns:idx="urn:ietf:params:xml:ns:yang:iana-if-type">idx:ethernetCsmacd</type>
+					
+    
+				</config>
+				
+    
+				<ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+					
+     
+					<config>
+						
+      
+						<auto-negotiate>false</auto-negotiate>
+						
+     
+					</config>
+					
+    
+				</ethernet>
+				
+    
+				<subinterfaces>
+					
+     
+					<subinterface>
+						
+      
+						<index>0</index>
+						
+      
+						<ipv4 xmlns="http://openconfig.net/yang/interfaces/ip">
+							
+       
+							<addresses>
+								
+        
+								<address>
+									
+         
+									<ip>10.188.1.94</ip>
+									
+         
+									<config>
+										
+          
+										<ip>10.188.1.94</ip>
+										
+          
+										<prefix-length>24</prefix-length>
+										
+         
+									</config>
+									
+        
+								</address>
+								
+       
+							</addresses>
+							
+      
+						</ipv4>
+						
+     
+					</subinterface>
+					
+    
+				</subinterfaces>
+				
+   
+			</interface>
+			
+   
+			<interface>
+				
+    
+				<name>GigabitEthernet0/0/0/0</name>
+				
+    
+				<config>
+					
+     
+					<name>GigabitEthernet0/0/0/0</name>
+					
+     
+					<type xmlns:idx="urn:ietf:params:xml:ns:yang:iana-if-type">idx:ethernetCsmacd</type>
+					
+    
+				</config>
+				
+    
+				<ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+					
+     
+					<config>
+						
+      
+						<auto-negotiate>false</auto-negotiate>
+						
+     
+					</config>
+					
+    
+				</ethernet>
+				
+    
+				<subinterfaces>
+					
+     
+					<subinterface>
+						
+      
+						<index>0</index>
+						
+      
+						<ipv4 xmlns="http://openconfig.net/yang/interfaces/ip">
+							
+       
+							<addresses>
+								
+        
+								<address>
+									
+         
+									<ip>192.168.0.1</ip>
+									
+         
+									<config>
+										
+          
+										<ip>192.168.0.1</ip>
+										
+          
+										<prefix-length>24</prefix-length>
+										
+         
+									</config>
+									
+        
+								</address>
+								
+       
+							</addresses>
+							
+      
+						</ipv4>
+						
+     
+					</subinterface>
+					
+    
+				</subinterfaces>
+				
+   
+			</interface>
+			
+   
+			<interface>
+				
+    
+				<name>GigabitEthernet0/0/0/1</name>
+				
+    
+				<config>
+					
+     
+					<name>GigabitEthernet0/0/0/1</name>
+					
+     
+					<type xmlns:idx="urn:ietf:params:xml:ns:yang:iana-if-type">idx:ethernetCsmacd</type>
+					
+     
+					<enabled>false</enabled>
+					
+    
+				</config>
+				
+    
+				<ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+					
+     
+					<config>
+						
+      
+						<auto-negotiate>false</auto-negotiate>
+						
+     
+					</config>
+					
+    
+				</ethernet>
+				
+   
+			</interface>
+			
+   
+			<interface>
+				
+    
+				<name>GigabitEthernet0/0/0/2</name>
+				
+    
+				<config>
+					
+     
+					<name>GigabitEthernet0/0/0/2</name>
+					
+     
+					<type xmlns:idx="urn:ietf:params:xml:ns:yang:iana-if-type">idx:ethernetCsmacd</type>
+					
+     
+					<enabled>false</enabled>
+					
+    
+				</config>
+				
+    
+				<ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+					
+     
+					<config>
+						
+      
+						<auto-negotiate>false</auto-negotiate>
+						
+     
+					</config>
+					
+    
+				</ethernet>
+				
+   
+			</interface>
+			
+   
+			<interface>
+				
+    
+				<name>GigabitEthernet0/0/0/3</name>
+				
+    
+				<config>
+					
+     
+					<name>GigabitEthernet0/0/0/3</name>
+					
+     
+					<type xmlns:idx="urn:ietf:params:xml:ns:yang:iana-if-type">idx:ethernetCsmacd</type>
+					
+    
+				</config>
+				
+    
+				<ethernet xmlns="http://openconfig.net/yang/interfaces/ethernet">
+					
+     
+					<config>
+						
+      
+						<auto-negotiate>false</auto-negotiate>
+						
+     
+					</config>
+					
+    
+				</ethernet>
+				
+    
+				<subinterfaces>
+					
+     
+					<subinterface>
+						
+      
+						<index>0</index>
+						
+      
+						<ipv4 xmlns="http://openconfig.net/yang/interfaces/ip">
+							
+       
+							<addresses>
+								
+        
+								<address>
+									
+         
+									<ip>10.1.1.1</ip>
+									
+         
+									<config>
+										
+          
+										<ip>10.1.1.1</ip>
+										
+          
+										<prefix-length>24</prefix-length>
+										
+         
+									</config>
+									
+        
+								</address>
+								
+       
+							</addresses>
+							
+      
+						</ipv4>
+						
+     
+					</subinterface>
+					
+    
+				</subinterfaces>
+				
+   
+			</interface>
+			
+  
+		</interfaces>
+		
+ 
+	</data>
+	
+
+</rpc-reply>
+
