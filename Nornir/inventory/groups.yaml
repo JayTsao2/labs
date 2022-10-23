@@ -1,0 +1,9 @@
+---
+cisco_ios_group:
+    platform: 'ios'
+
+cisco_iosxr_group:
+    platform: 'iosxr'
+
+cisco_nxos_group:
+    platform: 'nxos'

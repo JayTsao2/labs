@@ -1,0 +1,21 @@
+---
+CSR1000v:
+    hostname: 192.168.56.103
+    username: cisco
+    password: cisco123!
+    groups:
+        - cisco_ios_group
+
+Cisco XRv 9000:
+    hostname: 10.188.1.94
+    username: admin
+    password: 1234QWer
+    groups:
+        - cisco_iosxr_group
+
+Cisco Nexus 9000v:
+    hostname: 10.188.1.95
+    username: admin
+    password: 1234QWer
+    groups:
+        - cisco_nxos_group

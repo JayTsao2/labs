@@ -1,0 +1,17 @@
+2022-10-23 13:54:11,922 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 1 hosts
+2022-10-23 13:57:23,749 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2022-10-23 13:57:26,124 - nornir.core.task -    ERROR -      start() - Host 'Cisco XRv 9000': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/devasc/labs/venv/lib/python3.8/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/devasc/labs/venv/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+  File "/home/devasc/labs/venv/lib/python3.8/site-packages/napalm/ios/ios.py", line 1153, in get_facts
+    interface = line.split()[0]
+IndexError: list index out of range
+
+2022-10-23 13:58:22,876 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2022-10-23 14:00:23,066 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 3 hosts
+2022-10-23 14:01:40,556 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 3 hosts
+2022-10-23 14:02:12,184 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 3 hosts
+2022-10-23 14:03:22,018 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 3 hosts
